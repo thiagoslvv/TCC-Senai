@@ -1,0 +1,46 @@
+body{
+    background-color: white;
+}
+
+#titulo {
+   /* Imagem de fundo */
+    background-image:url(../../static/img.estoq/fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    height: 120px;
+    font-size: 80px;
+    font-style: italic;
+}
+body {
+    margin: 0;             
+    height: 100vh;          
+    display: flex;          
+    flex-direction: column; 
+    /* Colocar os itens um embaixo do outro */
+    flex: 1;
+  }
+  
+  table {
+    
+    flex: 1;                
+    /* Ocupar todo espaço que sobra */
+    width: 100%;
+    border-collapse:collapse;
+  }
+  
+  th, td {
+    flex: 1;
+    border: 1px solid black;
+    width: 200px;
+    
+  }
+   
+  .estoque-baixo {
+    /* Mudar a cor do estoque se estiver menor que 5 */
+    background-color:rgba(255, 0, 0, 0.596);
+    color: white;
+}

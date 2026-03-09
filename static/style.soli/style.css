@@ -1,0 +1,51 @@
+body{
+/* Imagem de Fundo */
+background-image: url(../../static/img.estoq/fundo.png);
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#Titulo{
+    text-align: center;
+    color:white;
+    height: 110px;
+    font-size: 80px;
+    font-style: italic;
+}
+#but{
+    height: 70px;
+    width: 700px;
+    position: relative;
+    top: 50px;
+    left: 640px;
+    font-size: 500px;
+}
+#buti{
+    height: 70px;
+    width: 700px;
+    position: relative;
+    top: 50px;
+    left: 640px;
+    border-color: rgb(42, 71, 150);
+    background-color: rgb(42, 71, 150);
+    color:white;
+}
+
+input::placeholder {
+/* Mexer no tamanho do texto do placeholder */
+    font-size: 20px;
+}
+
+#img{
+    position: absolute;
+    left: 15px;
+    top:900px;
+    background-color: rgb(42, 71, 150) ;
+    border-radius: 5px;
+    height:40px;
+    width: 150px;
+    color: white;
+    text-size-adjust: 60px;
+}

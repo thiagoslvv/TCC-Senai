@@ -1,0 +1,34 @@
+body{
+/* Imagem de Fundo */
+    background-image: url(../img.login/senaifundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+    
+
+#Almoxarifado{
+    text-align: center;
+    color:black;
+    font-size: 40px;
+
+}
+#caixas{
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: 50px;
+}
+#Entrar{
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+#linha{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    
+}

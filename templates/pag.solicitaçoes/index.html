@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitações</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/style.soli/style.css">
+    <script src="../static/style.soli/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h1 id="Titulo">Retirada e Devolução</h1>
+      <br><br><br><br>
+    <form class="d-flex" role="search" id="but">
+      <!-- Caixa pra colcoar o nome do item-->
+        <input class="form-control me-2" type="search" placeholder="Nome do Item" aria-label="Search"/>
+    </form>
+      <br><br><br>
+    <form class="d-flex" role="search" id="but">
+      <!-- Caixa pra colcoar a quantidade-->
+        <input class="form-control me-2" type="search" placeholder="Quantidade" aria-label="Search"/>
+    </form>
+      <br><br><br>
+    <button class="meu-input" type="submit" id="buti"onclick="buti()">Retirar</button>
+      <!-- Botão de retirar-->
+      <br><br><br>
+    <button class="meu-input" type="submit" id="buti" onclick="but()">Devolver</button>
+      <!-- Botão de devolver-->
+      <button type="button" id="img" style="height: 50px; width: 200; background-color:rgb(42, 71, 150); border-color: rgb(42, 71, 150);" onclick="history.back()">Voltar</button>
+
+</body>
+</html>

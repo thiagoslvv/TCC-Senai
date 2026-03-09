@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/style.cad/style.css">
+    <script src="../static/style.cad/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+        <h1 id="Titulo">Cadastro de Novos Itens</h1>
+    <form class="d-flex" role="search" id="but">
+    <!-- Caixa pra colcoar o nome do item--> 
+        <input class="form-control me-2" type="search" placeholder="Nome do Item" aria-label="Search"/>
+    </form>
+      <br><br><br>
+    <form class="d-flex" role="search" id="but">
+    <!-- Caixa pra colcoar a quantidade --> 
+        <input class="form-control me-2" type="search" placeholder="Quantidade" aria-label="Search"/>
+    </form>
+      <br><br><br>
+            <button class="meu-input" type="submit" id="buti" onclick="but()">Cadastrar</button>
+    <!-- Botão de cadastrar --> 
+            <button type="button" id="img" onclick="history.back()">Voltar</button>
+    <!-- Botão de voltar --> 
+</body>
+</html>
