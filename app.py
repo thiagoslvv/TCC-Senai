@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template1
 
 app = Flask(__name__)
 
@@ -9,7 +9,6 @@ def login():
 @app.route('/pag.cadastro/cad.html')
 def cadastro():
     return render_template('/pag.cadastro/cad.html')
-
 @app.route('/pag.redicionamento/red.html')
 def redirecionamento():
     return render_template('/pag.redicionamento/red.html')
