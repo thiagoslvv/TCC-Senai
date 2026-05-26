@@ -10,8 +10,51 @@
     <script src="../static/style.soli/style.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Almoxarifado</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="../pag.estoque/consultaestoque.html">Estoque</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="../pag.solicitaçoes/index.html"> Solicitar
+            
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../pag.cadastro/cad.html">Cadastrar</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../pag.devolver/devolver.html">Devolver</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../pag.login/login.html">Sair</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 <body>
-    <h1 id="Titulo">Retirada e Devolução</h1>
+
+    <h1 id="Titulo"> Solicitar Retirada</h1>
+
       <br><br><br><br>
     <form class="d-flex" role="search" id="but">
       <!-- Caixa pra colcoar o nome do item-->
@@ -19,16 +62,19 @@
     </form>
       <br><br><br>
     <form class="d-flex" role="search" id="but">
-      <!-- Caixa pra colcoar a quantidade-->
+      <!-- Caixa pra colocar a quantidade-->
         <input class="form-control me-2" type="search" placeholder="Quantidade" aria-label="Search"/>
     </form>
       <br><br><br>
+      <form class="d-flex" role="search" id="but">
+      <!-- Caixa pra colcoar o nome do item-->
+        <input class="form-control me-2" type="search" placeholder="Tipo do Item" aria-label="Search"/>
+    </form>
+    <br><br><br>
     <button class="meu-input" type="submit" id="buti"onclick="buti()">Retirar</button>
       <!-- Botão de retirar-->
       <br><br><br>
-    <button class="meu-input" type="submit" id="buti" onclick="but()">Devolver</button>
-      <!-- Botão de devolver-->
-      <button type="button" id="img" style="height: 50px; width: 200; background-color:rgb(42, 71, 150); border-color: rgb(42, 71, 150);" onclick="history.back()">Voltar</button>
 
+   
 </body>
 </html>

@@ -2,18 +2,54 @@ body{
     background-color: white;
 }
 
-#titulo {
-   /* Imagem de fundo */
-    background-image:url(../../static/img.estoq/fundo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    text-align: center;
-    height: 120px;
-    font-size: 80px;
-    font-style: italic;
+.container-fluid {
+    background-color: #192a6b;
+    padding: 15px;
+}
+
+/* links da navbar */
+.navbar .nav-link {
+    color: white !important;
+}
+
+/* nome Almoxarifado */
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+/* link ativo */
+.navbar .nav-link.active {
+    color: white !important;
+}
+
+/* hover */
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #dcdcdc !important;
+}
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+.navbar .nav-link {
+    color: white !important;
+    position: relative;
+}
+
+/* página ativa */
+.navbar .nav-link.active {
+    color: white !important;
+}
+
+/* traço embaixo */
+.navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
 }
 body {
     margin: 0;             

@@ -18,7 +18,7 @@ function verificarlogin() {
 
     // Se tiver correto
 
-    window.location.href = "../pag.redicionamento/red.html";
+    window.location.href = "../pag.estoque/consultaestoque.html";
 
     } else {
 

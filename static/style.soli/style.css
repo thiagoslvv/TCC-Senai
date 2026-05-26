@@ -1,16 +1,74 @@
 body{
 /* Imagem de Fundo */
-background-image: url(../../static/img.estoq/fundo.png);
+background-image: url(../img.soli/fundotop.png);
 background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
 }
+.container-fluid {
+    background-color: #192a6b;
+    padding: 15px;
+}
+
+/* links da navbar */
+.navbar .nav-link {
+    color: white !important;
+}
+
+/* nome Almoxarifado */
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+/* link ativo */
+.navbar .nav-link.active {
+    color: white !important;
+}
+
+/* hover */
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #dcdcdc !important;
+}
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+.navbar .nav-link {
+    color: white !important;
+    position: relative;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    position: relative;
+}
+
+/* página ativa */
+.navbar .nav-link.active {
+    color: white !important;
+}
+
+/* traço embaixo */
+.navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
 #Titulo{
     text-align: center;
+    position: absolute;
     color:white;
-    height: 110px;
+    left: 640px;
+    top: 150px;
+    height: 100px;
     font-size: 80px;
     font-style: italic;
 }
@@ -18,19 +76,20 @@ background-position: center;
     height: 70px;
     width: 700px;
     position: relative;
-    top: 50px;
-    left: 640px;
+    top: 145px;
+    left: 610px;
     font-size: 500px;
 }
 #buti{
     height: 70px;
     width: 700px;
     position: relative;
-    top: 50px;
-    left: 640px;
-    border-color: rgb(42, 71, 150);
-    background-color: rgb(42, 71, 150);
+    top: 145px;
+    left: 610px;
+    border-color: #ff9500;
+    background-color: #ff9500;
     color:white;
+    border-radius: 10px;
 }
 
 input::placeholder {

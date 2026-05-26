@@ -11,75 +11,68 @@
     <title>Estoque</title>
 </head>
 <body>
-  <!-- Thiago --> 
-    <h1>
-      <div id="titulo">
-        Estoque
-      </div>  
-    </h1> 
-    <body>
-      
-        <table id="estoque">
-          <!-- Tabela dos itens --> 
-          <tr style="background-color: gainsboro; color: black;">
-            
-            <th style="text-align: center;">Item</th>
-            <th style="text-align: center;">Quantidade</th>
-                
-          </tr>
-          <tr> 
-            <td style="text-align: center;">Chave de Fenda</td>
-            <td style="text-align: center;">5</td>
-          </tr>
-          <tr>
-            <td style="text-align: center;">Chave Inglesa</td>
-            <td style="text-align: center;">3</td>
-          </tr>
-          <tr>
-            <td style="text-align: center;">Cano PVC</td>
-            <td style="text-align: center;">10</td>
-          </tr>
-          <tr>
-            <td style="text-align: center;">Barra de Aço</td>
-            <td style="text-align: center;">4</td>
-          </tr>
-          <tr>
-            <td style="text-align: center;">Cano de Metal</td>
-            <td style="text-align: center;">2</td>
-          </tr>
-          <tr>
-            <td style="text-align: center;">Cabos de Rede</td>
-            <td style="text-align: center;">12</td>
-          </tr>
-          <tr>
-            <td style="text-align: center;">Monitor</td>
-            <td style="text-align: center;">5</td>
-          </tr>
-          <tr>
-            <td style="text-align: center;">Mouse</td>
-            <td style="text-align: center;">11</td>
-          </tr>
-          <tr>
-            <td style="text-align: center;">Cabo de Força</td>
-            <td style="text-align: center;">9</td>
-          </tr>
-          <tr>
-            <td style="text-align: center;">Cabo HDMI</td>
-            <td style="text-align: center;">2</td>
-          </tr>
-          <tr>
-            <td style="text-align: center;">Parafuso</td>
-            <td style="text-align: center;">17</td>
-          </tr>
-        </table>
-            <br><br>
-            <!-- caixa que organiza os botões --> 
-        <div class="btn-group" role="group" aria-label="Basic example" >
-          <!--Botão de voltar --> 
-            <button class="btn btn-primary"  style="width: 100px; background-color: rgb(42, 71, 150); position: absolute; left: 15px; top: -30px; height: 50px; width: 200px; border-color: rgb(42, 71, 150);" onclick="history.back()">Voltar</button>
-        </div>
-      </body>
-    
-    </table>
+
+
+ <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Almoxarifado</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="../pag.estoque/consultaestoque.html">Estoque</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../pag.solicitaçoes/index.html">
+            Solicitar
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../pag.cadastro/cad.html">Cadastrar</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../pag.devolver/devolver.html">Devolver</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../pag.login/login.html">Sair</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<table>
+  {% for item in resultado %}
+  <tr>
+    <th>{{dado_id}}</th>
+    <th>{{dado_nome}}</th>
+    <th>{{dado_qntd}}</th>
+    <th>{{dado_tipo}}</th>
+  </tr>
+  {% endfor %}
+  <tr>
+    <td>Ana Silva</td>
+    <td>Engenheira</td>
+    <th>Cargo</th>
+  </tr>
+  <tr>
+    <td>João Souza</td>
+    <td>Designer</td>
+    <th>Cargo</th>
+  </tr>
+</table>
+
+
+ 
 </body>
 </html>
